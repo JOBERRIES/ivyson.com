@@ -70,3 +70,72 @@ footer {
     opacity: 1;
     transform: none;
 }
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Header styling */
+header {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Background Video Styling */
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  /* Optional filters for a subtle effect */
+  filter: brightness(0.7);
+}
+
+/* Header content that is layered above the video */
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 2em;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Responsive Nav: Example for smaller screens */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
